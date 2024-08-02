@@ -16,19 +16,19 @@ const Category = () => {
   const category = [
     {
       _id: 9006,
-      title: "Imprimante",
+      title: "Printers",
     },
     {
       _id: 9007,
-      title: "Encre",
+      title: "Inks",
     },
     {
       _id: 9008,
-      title: "Ruban",
+      title: "Clocks",
     },
     {
       _id: 9009,
-      title: "Bac de dechet",
+      title: "Others",
     },
   ];
 
@@ -63,7 +63,7 @@ const Category = () => {
               )}
             </li>
           ))}
-          <li onClick={() => console.log(checkedCategorys)}>test</li>
+          <li onClick={() => console.log(checkedCategorys)}></li>
         </ul>
       </div>
     </div>

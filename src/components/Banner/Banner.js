@@ -12,7 +12,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
   <div
     style={{
       position: "relative",
-      backgroundColor: "#F5F5F3", // Gray background color
+      backgroundColor: "black", // Gray background color
       display: "flex",
       justifyContent: "center",
       alignItems: "center", // Center vertically
@@ -27,7 +27,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
       <h1
         style={{
           marginBottom: "15px",
-          fontSize: "2.5rem", // Adjust the font size as needed
+          fontSize: "2.5rem", //
           color: "#000", // Black color
           fontWeight: "700",
         }}
@@ -38,17 +38,11 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         style={{
           marginBottom: "25px",
           fontSize: "1.5rem", // Adjust the font size as needed
-          color: "#666", // Gray color
+          color: "white ", // Gray color
         }}
       >
         {Subtext}
       </p>
-
-      <Link to="/about">
-        <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
-          {buttonText}
-        </button>
-      </Link>
     </div>
     <div style={{ marginLeft: "100px" }}>
       <Image imgSrc={imgSrc} />
@@ -154,25 +148,19 @@ const Banner = () => {
       imgSrc: bannerImgOne,
       text: "Enhance Your Printing Experience",
       Subtext:
-        "Explore our premium printers and consumables for exceptional results",
-      buttonLink: "/offer",
-      buttonText: "Shop Now",
+        "Explore our wide range of premium printers and consumables for exceptional results",
     },
     {
       imgSrc: bannerImgOne,
       text: "Quality Printing Solutions",
       Subtext:
         "Discover our wide range of printers and consumables designed for professional printing needs.",
-      buttonLink: "/shop",
-      buttonText: "About-us",
     },
     {
       imgSrc: bannerImgOne,
       text: "Efficiency Redefined",
       Subtext:
         "Maximize productivity with our advanced printers and high-quality consumables. ",
-      buttonLink: "/contact",
-      buttonText: "Contact-us",
     },
 
     // Add more slides as needed

@@ -13,11 +13,10 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [messages, setMessages] = useState("");
 
-  // ========== Error Messages Start here ============
   const [errClientName, setErrClientName] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errMessages, setErrMessages] = useState("");
-  // ========== Error Messages End here ==============
+
   const [successMsg, setSuccessMsg] = useState("");
 
   const handleName = (e) => {
@@ -33,13 +32,11 @@ const Contact = () => {
     setErrMessages("");
   };
 
-  // ================= Email Validation start here =============
   const EmailValidation = (email) => {
     return String(email)
       .toLowerCase()
       .match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
   };
-  // ================= Email Validation End here ===============
 
   const handlePost = (e) => {
     e.preventDefault();

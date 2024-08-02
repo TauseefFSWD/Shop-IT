@@ -14,11 +14,12 @@ const YearProduct = () => {
         />
         <div className="w-full md:w-2/3 xl:w-1/2 h-80 absolute px-4 md:px-0 top-0 right-0 flex flex-col items-start gap-6 justify-center">
           <h1 className="text-3xl font-semibold text-primeColor">
-            Product of The year
+            Our Best Seller
           </h1>
           <p className="text-base font-normal text-primeColor max-w-[600px] mr-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            cupiditate modi amet! Facilis, aperiam quaerat.
+            Elegant Wall Clock: Timeless design with a clear, easy-to-read face.
+            Features reliable quartz movement for precise timekeeping. Adds a
+            touch of sophistication to any room.
           </p>
           <ShopNow />
         </div>

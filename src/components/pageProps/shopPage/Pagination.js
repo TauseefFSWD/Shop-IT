@@ -7,7 +7,6 @@ import { paginationItems } from "../../../constants";
 const items = paginationItems;
 
 function Items({ currentItems, selectedBrands, selectedCategories }) {
-  // Filter items based on selected brands and categories
   const filteredItems = currentItems.filter((item) => {
     const isBrandSelected =
       selectedBrands.length === 0 ||
@@ -90,7 +89,7 @@ const Pagination = ({ itemsPerPage }) => {
           Products from {itemStart} to {Math.min(endOffset, items.length)} of{" "}
           {items.length}
         </p>
-        <button onClick={() => console.log(selectedBrands)}> test</button>
+        <button onClick={() => console.log(selectedBrands)}> </button>
       </div>
     </div>
   );

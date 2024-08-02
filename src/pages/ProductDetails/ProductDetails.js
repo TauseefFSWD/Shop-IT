@@ -7,13 +7,12 @@ import { FaDownload } from "react-icons/fa";
 const tabs = [
   {
     id: "Fiche Technique",
-    label: "Fiche Technique",
+    label: "About",
   },
   {
     id: "Description",
     label: "Description",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+    content: "High Quality Product",
   },
   {
     id: "Video",
@@ -22,7 +21,7 @@ const tabs = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/watch?v=6e0yIRDVPlA&list=RD6e0yIRDVPlA&start_radio=1"
+        src="https://www.youtube.com/watch?v=VN9rC-8vvug"
         title="YouTube Video"
         frameBorder="0"
         allowFullScreen

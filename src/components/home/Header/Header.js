@@ -31,8 +31,9 @@ const Header = () => {
       <nav className="h-full px-4 max-w-container mx-auto relative">
         <Flex className="flex items-center justify-between h-full">
           <Link to="/">
-            <div>
-              <Image className="w-32 object-cover" imgSrc={logo} />
+            <div className="logo-container">
+              <span className="logo-part1">Shop</span>
+              <span className="logo-part2">-IT</span>
             </div>
           </Link>
           <div>
@@ -96,7 +97,7 @@ const Header = () => {
                         onClick={() => setCategory(!category)}
                         className="flex justify-between text-base cursor-pointer items-center font-titleFont mb-2"
                       >
-                        Shop by Category{" "}
+                        Sort by Category{" "}
                         <span className="text-lg">{category ? "-" : "+"}</span>
                       </h1>
                       {category && (
@@ -107,7 +108,7 @@ const Header = () => {
                           className="text-sm flex flex-col gap-1"
                         >
                           <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
+                          <li className="headerSedenavLi">Gadgets</li>
                           <li className="headerSedenavLi">Accessories</li>
                           <li className="headerSedenavLi">Electronics</li>
                           <li className="headerSedenavLi">Others</li>

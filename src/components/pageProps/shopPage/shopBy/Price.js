@@ -26,12 +26,12 @@ const Price = () => {
     {
       _id: 954,
       priceOne: 400.0,
-      priceTwo: 599.99,
+      priceTwo: 5999.99,
     },
     {
       _id: 955,
-      priceOne: 600.0,
-      priceTwo: 1000.0,
+      priceOne: 6000.0,
+      priceTwo: 20000.0,
     },
   ];
   return (
@@ -44,7 +44,7 @@ const Price = () => {
               key={item._id}
               className="border-b-[1px] border-b-[#F0F0F0] pb-2 flex items-center gap-2 hover:text-primeColor hover:border-gray-400 duration-300"
             >
-              ${item.priceOne.toFixed(2)} - ${item.priceTwo.toFixed(2)}
+              ₹{item.priceOne.toFixed(2)} - ₹{item.priceTwo.toFixed(2)}
             </li>
           ))}
         </ul>

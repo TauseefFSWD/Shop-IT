@@ -14,11 +14,11 @@ const Brand = () => {
   const brands = [
     {
       _id: 900,
-      title: "Pantum",
+      title: "Canon",
     },
     {
       _id: 901,
-      title: "Hp",
+      title: "HP",
     },
     {
       _id: 902,
@@ -27,7 +27,7 @@ const Brand = () => {
 
     {
       _id: 903,
-      title: "Ricoh",
+      title: "Lexmark",
     },
   ];
 

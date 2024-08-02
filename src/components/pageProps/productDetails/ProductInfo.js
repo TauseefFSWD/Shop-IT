@@ -4,13 +4,13 @@ import { addToCart } from "../../../redux/orebiSlice";
 
 const ProductInfo = ({ productInfo }) => {
   const highlightStyle = {
-    color: "#d0121a", // Change this to the desired color
-    fontWeight: "bold", // Change this to the desired font weight
+    color: "#d0121a",
+    fontWeight: "bold",
   };
 
   const renderDescription = () => {
     if (!productInfo.des) {
-      return null; // or handle accordingly if product.des is not defined
+      return null;
     }
 
     const description = productInfo.des.split(/:(.*?)-/).map((part, index) => {
@@ -28,17 +28,17 @@ const ProductInfo = ({ productInfo }) => {
     <div className="flex flex-col gap-5">
       <h2 className="text-4xl font-semibold">{productInfo.productName}</h2>
       <p className="text-2xl font-semibold">
-        {productInfo.price} Dt
-        <span className="text-xl font-semibold line-through ml-2">540</span>
+        {productInfo.price} ₹
+        <span className="text-xl font-semibold line-through ml-2">14000</span>
         <span className="text-xs ml-2 inline-flex items-center px-3 py-1 rounded-full bg-green-600 text-white">
-          Save 100
+          Save 10%
         </span>
       </p>
       <hr />
       <p className="text-base text-gray-600">{renderDescription()}</p>
 
       <div className="flex items-center">
-        <p className="text-sm mr-2"> leave a review </p>
+        <p className="text-sm mr-2"> Rating </p>
 
         <svg
           className="w-4 h-4 text-yellow-300 ms-1"
@@ -87,7 +87,7 @@ const ProductInfo = ({ productInfo }) => {
         </svg>
       </div>
 
-      <p className="text-base text-green-600 font-medium">En Stock</p>
+      <p className="text-base text-green-600 font-medium">In Stock</p>
       <p className="font-medium text-lg">
         <span className="font-normal">Colors:</span> {productInfo.color}
       </p>
@@ -111,7 +111,7 @@ const ProductInfo = ({ productInfo }) => {
       </button>
       <p className="font-normal text-sm">
         <span className="text-base font-medium"> Categories:</span> Spring
-        collection, Streetwear, Women Tags: featured SKU: N/A
+        collection, Ink Type:LaserJet featured SKU: N/A
       </p>
     </div>
   );

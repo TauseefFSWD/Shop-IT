@@ -13,8 +13,8 @@ const About = () => {
       <Breadcrumbs title="About" prevLocation={prevLocation} />
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
-          <span className="text-primeColor font-semibold text-lg">Orebi</span>{" "}
-          is one of the world's leading ecommerce brands and is internationally
+          <span className="text-primeColor font-semibold text-lg">Shop-IT</span>{" "}
+          is one of the India's leading ecommerce brands and is internationally
           recognized for celebrating the essence of classic Worldwide cool
           looking style.
         </h1>
